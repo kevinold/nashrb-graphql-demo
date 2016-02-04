@@ -26,6 +26,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
+    blankslate (3.1.3)
     builder (3.1.4)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -36,6 +37,8 @@ GEM
     coffee-script-source (1.10.0)
     erubis (2.7.0)
     execjs (2.6.0)
+    graphql (0.10.9)
+      parslet (~> 1.6)
     hike (1.2.3)
     i18n (0.7.0)
     jbuilder (1.5.3)
@@ -50,6 +53,8 @@ GEM
     mime-types (2.99)
     minitest (4.7.5)
     multi_json (1.11.2)
+    parslet (1.7.1)
+      blankslate (>= 2.0, <= 4.0)
     rack (1.5.5)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -103,6 +108,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  graphql
   jbuilder (~> 1.2)
   jquery-rails
   rails (= 4.0.12)
