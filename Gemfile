@@ -45,3 +45,6 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'graphql'
+gem 'graphql-relay'
+
+gem 'hashie'
