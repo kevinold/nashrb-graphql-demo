@@ -53,4 +53,8 @@ NashrbGraphqlDemo::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  scope '/graphql' do
+    post"/", to: "graphql#create"
+  end
 end
