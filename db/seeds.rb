@@ -7,7 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 #
 
+(1..5).each do |i|
+  Author.create(name: "Author #{i}")
+end
 
 (1..50).each do |i|
-  Post.create(title: "Test title #{i}", summary: "Summary #{i}", body: "Body #{i}")
+  Post.create(title: "Test title #{i}", summary: "Summary #{i}", body: "Body #{i}", author_id: 1)
 end
