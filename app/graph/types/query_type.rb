@@ -5,6 +5,7 @@ QueryType = GraphQL::ObjectType.define do
   field :post do
     type PostType
     description "Post"
+    argument :id, !types.ID
     resolve -> (obj, args, ctx) do
       Post.find(args["id"])
     end
